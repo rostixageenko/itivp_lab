@@ -10,6 +10,11 @@ body {
 }
 
 
+.logo {
+    margin-right: 7.5rem; 
+    margin-left: 2.38rem;
+}
+
 .fixed-header {
     position: fixed; /* Фиксируем шапку */
     display: flex;
@@ -18,7 +23,7 @@ body {
     right: 1.5rem; /* Отступ справа */
     width: calc(100% - 3rem);
     height: 7rem;
-    justify-content: center;
+    
     align-items: center;
     z-index: 1000; 
     
@@ -27,7 +32,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     top: 0;
     width: 100%;
@@ -43,7 +48,7 @@ nav ul {
     list-style: none;
     padding: 2.81rem, 0, 0;
     display: inline-flex;
-    align-items: center;
+    
     color: #222;
     font-family: Roboto;
     font-size: 0.875rem;
@@ -66,11 +71,16 @@ nav ul li a {
     font-family: Roboto;
     font-size: 0.875rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.35rem; 
     letter-spacing: 0.03125rem;
     text-transform: uppercase;
+    
 }
 
-/* nav ul li a:hover {
-} */
+nav ul li a:hover {
+    border: 1px solid #222;
+    padding: 0.5rem 1rem;
+    border-radius: 20rem 5rem 20rem 5rem; /* При наведении изменяется закругление */
+    background-color: transparent;
+}
