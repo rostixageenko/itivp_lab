@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    margin: 0;
+    padding-top: 7rem; 
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 0.875rem;
+    background: #FFFCF6;
+}
+
+
+.logo {
+    margin-right: 7.5rem; 
+    margin-left: 2.38rem;
+}
+
+.fixed-header {
+    position: fixed; /* Фиксируем шапку */
+    display: flex;
+    top: 0;
+    left: 1.5rem; /* Отступ слева */
+    right: 1.5rem; /* Отступ справа */
+    width: calc(100% - 3rem);
+    height: 7rem;
+    
+    align-items: center;
+    z-index: 1000; 
+    
+}
+
+
+.container {
+    display: flex;
+    
+    align-items: center;
+    top: 0;
+    width: 100%;
+    padding: 0 2rem;
+    height: 7rem;
+    border-bottom: 0.0625rem solid #0E0A00; /* Нижняя линия */
+    border-left: 0.0625rem solid #0E0A00; /* Левая линия */
+    border-right: 0.0625rem solid #0E0A00;
+}
+
+/* Навигация */
+nav ul {
+    list-style: none;
+    padding: 2.81rem, 0, 0;
+    display: inline-flex;
+    
+    color: #222;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.35rem; 
+    letter-spacing: 0.03125rem;
+    text-transform: uppercase;
+    gap: 3rem;
+}
+
+/* nav ul li {
+    gap: 3rem;
+
+} */
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.35rem; 
+    letter-spacing: 0.03125rem;
+    text-transform: uppercase;
+    
+}
+
+nav ul li a:hover {
+    border: 1px solid #222;
+    padding: 0.5rem 1rem;
+    border-radius: 20rem 5rem 20rem 5rem; /* При наведении изменяется закругление */
+    background-color: transparent;
+}
