@@ -32,6 +32,8 @@ nav {
 }
 nav .nav-link:hover {
     background-color: #ddd;
+    border-radius: 1000px;
+    border-color: 1px solid black;
 }
 
 /* nav .nav-link:last-child {
