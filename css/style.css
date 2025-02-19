@@ -1,127 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html{
-    font-size: 0.9vw;
-
+    font-size: 0.9vw; /*17,28px*/
 }
 
-body {
-    margin: 0;
-    padding-top: 7rem; 
+body {  
     font-family: Roboto;
-    font-style: normal;
-    /* font-size: 0.875rem; */
-    background: #FFFCF6;
-    margin-left: 1%;
-    margin-right: 1%;
-    border-bottom: 0.0625rem solid #0E0A00; /* Нижняя линия */
-    border-left: 0.0625rem solid #0E0A00; /* Левая линия */
-    border-right: 0.0625rem solid #0E0A00;
-}
-
-
-.logo-nav {
-    height: 100%;
-    margin-right: 2.5rem; 
-    margin-left: 2.38rem;
-}
-
-.fixed-header {
-    position: fixed;    
-    display: flex;
-    top: 0;
-    right: 1.5rem;  
-    width: 100%;
-    height: 7rem;
-    border-bottom: 0.0625rem solid #0E0A00;
-    align-items: center;
-    z-index: 1000; 
-    justify-content: space-between;
-    border-left: 0.0625rem solid #0E0A00; /* Левая линия */
-    border-right: 0.0625rem solid #0E0A00;
-}
-
-/* 
-.container {
-    display: flex;
-    align-items: center;
-    top: 0;
-    width: 100%;
-    padding: 0 2rem;
-    height: 7rem;
-} */
-
-nav{
-    display: flex;
-    align-items: center;
-}
-/* Навигация */
-nav ul {
-    list-style: none;
-    padding: 2.81rem, 0, 0;
-    display: inline-flex;
-    color: #222;
-    font-family: Roboto;
-    /* font-size: 0.875rem; */
     font-style: normal;
     font-weight: 400;
-    line-height: 1.35rem; 
-    letter-spacing: 0.03125rem;
-    text-transform: uppercase;
-    gap: 3rem;
+    background: #FFFCF6;
+    height: auto;
+    margin-left: 1.38rem;
+    margin-right: 1.38rem;
+    border-bottom: 0.0625rem solid #0E0A00;
+    border-left: 0.0625rem solid #0E0A00;
+    border-right: 0.0625rem solid #0E0A00;
 }
 
-/* nav ul li {
-    gap: 3rem;
-
-} */
-
-nav ul li a {
-    text-decoration: none;
-    color: #222;
-    font-family: Roboto;
-    /* font-size: 0.875rem; */
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.35rem; 
-    letter-spacing: 0.03125rem;
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    align-items: center; 
+    padding: 1.85rem 0rem 1.68rem 0rem; 
+    border-bottom: 0.0625rem solid #0E0A00;
     text-transform: uppercase;
-    padding: 1.2rem 1.2rem;
-    margin-left: 1px;
-    margin-right: 1px;
+    letter-spacing: 0.029rem;
 }
 
-nav ul li a:hover {
-    text-decoration: none;
+.logo-nav {
+    margin-right: 6.95rem; 
+    margin-left: 2.2rem;
+    width: 2.43rem;
+    height: 2.48rem;
+}
+
+nav ul {
+    display: flex; 
+    list-style: none;
+    margin: 0; 
+}
+
+
+nav li {
+    margin-right: 2.77rem; 
+}
+
+nav li:last-child {
+    margin-right: 0; 
+}
+
+nav ul a {
+    padding: 10px;
     color: #222;
-    font-family: Roboto;
-    /* font-size: 0.875rem; */
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.35rem; 
-    letter-spacing: 0.03125rem;
-    text-transform: uppercase;
-    padding: 1.2rem 1.2rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+nav ul a:hover {
     border: 1px solid #222;
     border-radius: 50%; 
-    background-color: transparent;
 }
 
-#button-order{
-   display:flex;
-   justify-content: flex-end;
-   text-decoration: none;
-   color: #FFFDFA;
-   font-family: Roboto;
-   /* font-size: 14px; */
-   font-style: normal;
-   font-weight: 400;
-   line-height:  1.35rem; /* 154.286% */
-   letter-spacing: 0.03125rem;
-   text-transform: uppercase;
-   padding: 8px 16px;
+nav>a {
+    display: flex; 
     align-items: center;
-    margin-right: 2.5rem;
-    background: #EB6B32;
-    
+    justify-content: center;  
+    height: 2.78rem;
+    width: 6.95rem;;   
+    margin-right: 4.16rem;
+    background-color: #EB6B32;
+    color: #FFFDFA;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav>a:hover {
+    background-color: #e64a19; 
 }
