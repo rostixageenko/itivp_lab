@@ -19,6 +19,7 @@ body {
     font-style: normal;
     font-weight: 400;
     height: auto;
+    margin: 0;
     margin-left: 1.7857rem;
     margin-right: 1.7857rem;
     border-bottom: 1px solid #0E0A00;
@@ -96,7 +97,7 @@ header {
     border-bottom: 1px solid #0E0A00;
 }
 
-.header-content {
+.column-content {
     display: flex;
     width: 100%;
 }
@@ -113,7 +114,7 @@ header {
     padding: 1.428rem;
 }
 
-.header-image {
+.image-container img{
     width: 100%;
     height: 100%;
 }
@@ -121,7 +122,7 @@ header {
 .logo-image {
     width: 46rem;
     height: 19.8rem;
-    padding: 3.43rem 2.6rem;    
+    padding: 3.43rem 2.4rem;    
 }
 
 .moving-text-container {
@@ -156,7 +157,7 @@ header {
 }
 
 .text-container {
-    display: flex;
+    display: inline-flex;
     width: 100%;
     height: auto;
     align-items: center;
@@ -171,4 +172,150 @@ header {
     text-align: center;
 }
 
+/* =========================================================================================== */
+
+#text-cock{
+    width: 67.64rem ;
+    margin:  4.286rem 3.428rem;
+    margin-left: 4.286rem;
+    margin-left: 4.286rem;
+    text-align: center;
+    color: #000;
+    font-size: 4.64rem;
+    text-transform: uppercase;
+}
+
+#cock-container img {
+    width: 9.928rem;
+}
+
+#frames-for-pizza{
+    display: grid;
+    grid-template-columns:  repeat(3,1fr) ; 
+    /* width: auto; */
+    text-transform: uppercase;
+    margin-top: 7.143rem;
+    margin-bottom: 3.43rem;
+    gap:1.35rem
+}
+
+.frame{
+    position: relative;
+}
+
+.frame> img{
+    width: 32.6rem;
+}
+
+.pizza-image {
+    width: 25.714rem;
+    margin-top: 0.5rem; 
+}
+.content{
+    position: absolute;
+    text-align: center;
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    background-color: transparent;
+}
+
+.content span {
+    width: 25.714rem;
+    font-size: 2.285rem;
+    background-color: transparent;
+}
+.content img {
+    width: 27rem;
+    margin: 3rem 0;
+    background-color: transparent
+}
+
+#frame-container{
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+main  .column-left {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.428rem;
+    color: #000;
+    letter-spacing: 0.0357rem;
+    text-transform: uppercase;
+}
+
+main  .column-left span{
+    margin-top: 2.93rem;
+    margin-bottom: 2.28rem;
+    text-align: center;
+    display: block;
+    width: 36.64rem;
+}
+
+main  .column-left img {
+    width: 48.5rem;
+    margin: 0 1.43rem 1.43rem 1.43rem;
+}
+
+main .column-right {
+    position: relative; 
+}
+
+main .column-right img {
+    width: 48rem;
+    margin: 3.43rem 1.43rem;
+}
+
+.text-overlay {
+    position: absolute; 
+    top: 2%;
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    background-color:transparent ;
+    color: #000; 
+}
+
+main .column-right p {
+    width: 28.5rem;
+    font-size: 1.143rem;
+    line-height: 1.943rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    margin-bottom: 2rem; 
+    text-align: center; 
+}
+
+#left-shrimp {
+    position: absolute; 
+    top: 13.5%;
+    left: 15%; 
+    right: 0; 
+    bottom: 0; 
+    width: 5.714rem;
+    background-color: transparent;
+}
+
+#right-shrimp {
+    position: absolute; 
+    top: 13.5%;
+    left: 67%; 
+    right: 0; 
+    bottom: 0; 
+    width: 5.714rem;
+    background-color: transparent;
+}
 
