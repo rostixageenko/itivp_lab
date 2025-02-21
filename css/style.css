@@ -393,6 +393,7 @@ footer{
 }
 
 #logo-footer {
+    width: 46rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -402,6 +403,7 @@ footer{
 }
 
 #circle1,#circle2{
+    width: 6.7rem;
     position: absolute;
     top:6.4%;
     z-index: 2;
@@ -409,6 +411,7 @@ footer{
 }
 
 #circle3, #circle4{
+    width: 6.7rem;
     position: absolute;
     bottom: 6.4%;
     z-index: 2;
@@ -424,6 +427,7 @@ footer{
 }
 
 #flame{
+    width: 100%;
     position: absolute;
     bottom: -1.2%;;
     left:0%;
