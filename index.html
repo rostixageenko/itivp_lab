@@ -5,26 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FUOCO - Настоящая неополитанская пицца</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/index.js"></script>
   </head>
 
   <body>
     <nav>
-      <img src="icons/logo-nav.svg" alt="Logonav" class="logo-nav" />
-      <ul>
-        <li><a href="index.html">Меню</a></li>
-        <li><a href="about.html">Контакты</a></li>
-        <li><a href="contact.html">Спецпредложения</a></li>
-      </ul>
-      <a href="contact.html">Заказать</a>
+      <div>
+        <img class="logo-nav1" src="./img/logo.png" >
+        <img class="logo-nav2" src="icons/logo-nav.svg" alt="Logonav" />
+      </div>
+      <div class="hamburger-menu">
+        <input id="menu_toggle" type="checkbox">
+        <label class="menu_btn" for="menu_toggle">
+          <span></span>
+        </label>
+        <ul class="menu_box">
+          <li><a class="menu-item" href="index.html">Меню</a></li>
+          <li><a class="menu-item" href="about.html">Контакты</a></li>
+          <li><a class="menu-item" href="contact.html">Спецпредложения</a></li>
+          <li><a class="menu-item" href="contact.html">Заказать</a></li>
+        </ul>
+      </div>
+      <a id="desctop-order" href="contact.html">Заказать</a>
     </nav>
 
     <header>
       <div class="column-content">
         <div class="column column-left">
           <img
+            class="logo-image"
             src="../itivp_lab/img/logo.png"
             alt="Логотип"
-            class="logo-image"
           />
           <div class="moving-text-container">
             <div class="moving-content">
@@ -68,41 +79,29 @@
 
       <section id="frame-container">
         <div id="frames-for-pizza">
-          <div class="frame">
-            <img src="../itivp_lab/icons/frame-pizza.svg" alt="Pizza Frame" />
-            <div class="content">
-              <span>Пепперони</span>
-              <img
-                src="../itivp_lab/img/pizza-in-frame-1.png"
-                alt="Пепперони Pizza"
-                class="pizza-image"
-              />
+            <div class="frame">
+                <img src="../itivp_lab/icons/frame-pizza.svg" alt="Pizza Frame" />
+                <div class="content">
+                    <span>Пепперони</span>
+                    <img src="../itivp_lab/img/pizza-in-frame-1.png" alt="Пепперони Pizza" class="pizza-image" />
+                </div>
             </div>
-          </div>
-          <div class="frame">
-            <img src="../itivp_lab/icons/frame-pizza.svg" alt="Pizza Frame" />
-            <div class="content">
-              <span>Маргарита</span>
-              <img
-                src="../itivp_lab/img/pizza-in-frame-2.png"
-                alt="Маргарита Pizza"
-                class="pizza-image"
-              />
+            <div class="frame">
+                <img src="../itivp_lab/icons/frame-pizza.svg" alt="Pizza Frame" />
+                <div class="content">
+                    <span>Маргарита</span>
+                    <img src="../itivp_lab/img/pizza-in-frame-2.png" alt="Маргарита Pizza" class="pizza-image" />
+                </div>
             </div>
-          </div>
-          <div class="frame">
-            <img src="../itivp_lab/icons/frame-pizza.svg" alt="Pizza Frame" />
-            <div class="content">
-              <span>Цезарь</span>
-              <img
-                src="../itivp_lab/img/pizza-in-frame-3.png"
-                alt="Цезарь Pizza"
-                class="pizza-image"
-              />
+            <div class="frame">
+                <img src="../itivp_lab/icons/frame-pizza.svg" alt="Pizza Frame" />
+                <div class="content">
+                    <span>Цезарь</span>
+                    <img src="../itivp_lab/img/pizza-in-frame-3.png" alt="Цезарь Pizza" class="pizza-image" />
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
       <div class="moving-text-container">
         <div class="moving-content">
@@ -134,22 +133,17 @@
           <img src="../itivp_lab/icons/logo-nav.svg" class="moving-logo" />
         </div>
       </div>
-      <div class="text-container">
         <div class="image-container">
           <img src="../itivp_lab/img/pizza-big-image.png" alt="Большая пицца" />
         </div>
-      </div>
-
+      
       <div class="column-content">
         <div class="column column-left">
           <span>История создания пиццы</span>
           <img src="../itivp_lab/gif/rotate-pizza.gif" alt="gif image" />
         </div>
         <div class="column column-right">
-          <img
-            src="../itivp_lab/img/frame-history.png"
-            alt="Описание изображения"
-          />
+          <img src="../itivp_lab/img/frame-history.png" />
           <img id="left-shrimp" src="../itivp_lab/img/shrimp-left.svg" />
           <div class="text-overlay">
             <p id="first-paragraph">
