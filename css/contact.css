@@ -15,12 +15,8 @@ header {
     text-decoration: none;
 }
 
-nav ul span {
-    padding: 10px;
-    color: #222;
-}
 
-#text-special-offers {
+#text-contact {
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 2.85rem;
@@ -28,110 +24,161 @@ nav ul span {
 }
 
 
-.offer span, .offer p {
-    display: block;
-    width: 19rem;
-    margin-left: 0.92rem;
-    margin-right: 0.92rem;
-}
 
-.offer span, .offer p{
+
+section{
     letter-spacing: 0.03125rem;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
 }
 
+.name-center{
+    color: #222;
+    font-weight: bold;
+}
+.assessment{
+    margin-top: 0.5rem;
+}
+
+
+
+.contact > p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.contact div {
+    margin-top: 1.5rem;
+}
+
+.contact div p {
+    margin: 0;
+}
+
+
 @media (min-width: 1440px) {
 
-nav ul span {
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 50%; 
-}
+    .contact span, .contact p {
+        display: block;
+    }
 
-#cock-container img {
-    width: 4.14rem;
-}
+    nav ul span {
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 50%; 
+        padding: 10px;
+    }
 
-#text-special-offers {
-    font-size: 3.85rem;
-    margin-left: 5.14rem;
-    margin-right: 5.14rem;
-}
+    #cock-container img {
+        width: 4.14rem;
+    }
 
-#offers {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
-    margin: 3.03rem 9.31rem 5.12rem 9.31rem;
-    gap: 3.62rem;
-}
+    #text-contact {
+        font-size: 3.85rem;
+        margin-left: 5.14rem;
+        margin-right: 5.14rem;
+    }
 
-.offer span, .offer p {
-    width: 19rem;
-}
+    #contacts {
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        margin: 3rem 14rem 4.5rem 14rem;
+        gap: 3rem;
+        /* justify-content: center; */
+    }
 
-.offer span {
-    margin-top: 2rem; 
-    font-size: 1.5rem;
-    line-height: 135%;
-} 
+    .name-center{
+        font-size: 1.5rem;
+    } 
 
- .offer p{
-    margin-top: 1rem;
-    font-size: 1rem;
-    line-height: 1.35rem; 
- }
+    .assessment img {
+        width: 1.125rem;
+    }
 
- .offer img {
-    width: 21rem;
- }
+    .assessment, section p{
+        font-size: 1.125rem;
+    }
+
+    .contact span, .contact p :not(.long-address){
+        width: 14rem;
+    }
+
+    .long-address{
+        width: 18rem;
+    }
+
+    #telephone-email {
+        margin: 0 0 4.5rem 14rem;
+    }
+    #telephone-email p {
+        margin: 0;
+        margin-bottom: 0.25rem;
+    }
+
+    #telephone-email div:first-child{
+        margin-bottom: 0.56rem;
+    }
 }
 
 @media (min-width: 1000px) and (max-width: 1440px){
+
     nav ul span {
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 50%; 
-}
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 50%; 
+        padding: 10px;
+    }
+    
+    #cock-container img {
+        width: 4.14rem;
+    }
+    
+    #text-contact {
+        font-size: 3.85rem;
+        margin-left: 5.14rem;
+        margin-right: 5.14rem;
+    }
+    
+    #contacts {
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        margin: 3rem 8rem 4.5rem 8rem;
+        gap: 3rem;
+    }
+    
+    .name-center{
+        font-size: 1.8rem;
+    }     
 
-#cock-container img {
-    width: 4.14rem;
-}
+    .assessment img {
+        width: 1.4rem;
+    }
+    
+    .assessment, section p{
+        font-size: 1.4rem;
+    }
+    
 
-#text-special-offers {
-    font-size: 3.85rem;
-    margin-left: 5.14rem;
-    margin-right: 5.14rem;
-}
+    .contact span, .contact p :not(.long-address){
+        width: 19rem;
+    }
+    
+    .long-address{
+        width: 23rem;
+    }
 
-#offers {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
-    margin: 3.03rem 9.31rem 5.12rem 9.31rem;
-    gap: 3.62rem;
-}
-
-.offer span, .offer p {
-    width: 19rem;
-}
-
-.offer span {
-    margin-top: 2rem; 
-    font-size: 2rem;
-    line-height: 135%;
-} 
-
- .offer p{
-    margin-top: 1rem;
-    font-size: 1.5rem;
- }
-
- .offer img {
-    width: 25rem;
- }
+     #telephone-email {
+        margin: 0 0.1rem 4.5rem 8rem;
+     }
+     #telephone-email p {
+        margin: 0;
+        margin-bottom: 0.25rem;
+     }
+    
+     #telephone-email div:first-child{
+        margin-bottom: 0.56rem;
+     }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -144,87 +191,106 @@ nav ul span {
     nav ul span {
         text-decoration: underline;
         background-color: #ECEFF1;
+        padding: 1rem;
     }
 
-    #text-special-offers {
+    #text-contact {
         width: 60rem;
         font-size: 6rem;
         margin-left: 2rem;
         margin-right: 2rem;
     }
 
-    #offers {
+    #contacts {
         padding-top: 3rem ;
-        text-align: center;
+        /* text-align: center; */
         padding-left: 9rem;
         padding-right: 9rem;
     }
 
-    .offer{
+    .contact {
+        margin-bottom: 7rem;
+    }
+
+    .name-center, .assessment   {
+        font-size: 4rem;
+    }     
+
+    .assessment img {
+        width: 3rem;
+    }
+    
+    section p{
+        font-size: 3rem;
+    }
+    
+
+    .contact span, .contact p :not(.long-address){
         width: 100%;
     }
-    .offer span, .offer p {
-        width: 100% ;
-    }
-    .offer img {
-        width: 92%;
-    }
-    .offer span {
-        margin-top: 4rem; 
-        font-size: 5rem;
-      } 
     
-     .offer p{
-        margin-top: 4rem;
-        font-size: 4rem;
-        margin-bottom: 6rem;
+     #telephone-email {
+        margin: 0 0.1rem 4.5rem 8rem;
+     }
+     #telephone-email p {
+        margin: 0;
+        margin-bottom: 0.25rem;
+     }
+    
+     #telephone-email div:first-child{
+        margin-bottom: 0.56rem;
      }
 }
 
 @media only screen and (max-width: 1000px)  and (orientation: landscape){
-    #text-special-offers {
+    
+    
+    #text-contact {
         font-size: 3.85rem;
         margin-left: 5.14rem;
         margin-right: 5.14rem;
     }
     
-    #offers {
+    #contacts {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        justify-items: center;
-        justify-content: center;
-        margin: 3.03rem 3rem 5.12rem 3rem;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: auto auto;
+        margin: 3rem 8rem 4.5rem 8rem;
         padding: 0;
-        gap: 2rem;
+        padding-left: 17rem;
+        gap: 3rem;
     }
     
-    .offer {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center;
-        text-align: center; 
-        width: 100%; 
-    }
+    .name-center{
+        font-size: 4rem;
+    }     
 
-    .offer span, .offer p {
-        text-align: center;
-        width: 32rem;
+    .assessment img {
+        width: 3rem;
     }
     
-    .offer span {
-        margin-top: 2rem; 
+    .assessment, section p{
         font-size: 3rem;
-        line-height: 135%;
-    } 
+    }
     
-     .offer p{
-        margin-top: 1rem;
-        font-size: 2rem;
-        /* line-height: 1.35rem;  */
+
+    .contact span, .contact p :not(.long-address){
+        width: 19rem;
+    }
+    
+     #telephone-email {
+        margin: 0 0.1rem 4.5rem 8rem;
+     }
+     #telephone-email p {
+        margin: 0;
+        margin-bottom: 0.25rem;
+     }
+     #telephone-email {
+        margin: 0 0.1rem 4.5rem 24.5rem;
      }
     
-     .offer img {
-        width: 27rem;
+     #telephone-email div:first-child{
+        margin-bottom: 0.56rem;
      }
+
 }

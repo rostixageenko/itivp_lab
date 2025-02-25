@@ -15,10 +15,6 @@ header {
     text-decoration: none;
 }
 
-nav ul span {
-    padding: 10px;
-    color: #222;
-}
 
 #text-special-offers {
     text-align: center;
@@ -48,6 +44,7 @@ nav ul span {
     text-decoration: none;
     border: 1px solid black;
     border-radius: 50%; 
+    padding: 10px;
 }
 
 #cock-container img {
@@ -94,6 +91,7 @@ nav ul span {
     text-decoration: none;
     border: 1px solid black;
     border-radius: 50%; 
+    padding: 10px;
 }
 
 #cock-container img {
@@ -144,6 +142,7 @@ nav ul span {
     nav ul span {
         text-decoration: underline;
         background-color: #ECEFF1;
+        padding: 1rem;
     }
 
     #text-special-offers {
