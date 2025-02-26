@@ -59,10 +59,6 @@ section{
 
 @media (min-width: 1440px) {
 
-    .contact span, .contact p {
-        display: block;
-    }
-
     nav ul span {
         text-decoration: none;
         border: 1px solid black;

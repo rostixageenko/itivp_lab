@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUOCO - Специальные предложения</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/order.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="../index.html" class="invisible-link">
+          <img class="logo-nav1" src="../img/logo.png" />
+          <img class="logo-nav2" src="../icons/logo-nav.svg" alt="Logonav" />
+        </a>
+      </div>
+      <div class="hamburger-menu">
+        <input id="menu_toggle" type="checkbox" />
+        <label class="menu_btn" for="menu_toggle">
+          <span></span>
+        </label>
+        <ul class="menu_box">
+          <li><a class="menu-item" href="index.html">Меню</a></li>
+          <li><a class="menu-item" href="./contact.html">Контакты</a></li>
+          <li>
+            <a class="menu-item" href="./special_offers.html"
+              >Спецпредложения</a
+            >
+          </li>
+          <li id="visit-link" class="order-burger">
+            <span class="menu-item">Заказать</span>
+          </li>
+        </ul>
+      </div>
+      <a id="visit-order" class="desctop-order" href="./order.html">Заказать</a>
+    </nav>
+    <main>
+      <section>
+        <div id="information-about-order">
+        <div id="input-fields-block">
+          <div id="header-name">
+            <img src="../icons/flame-in-circle.svg" />
+            <span>Заказ на доставку</span>
+            <img src="../icons/flame-in-circle.svg" />
+          </div>
+          <div id="input-fields">
+            <label for="name">имя:</label>
+            <input id="name" type="text" />
+            <label for="number">номер телефона:</label>
+            <input id="number" type="text" />
+            <label for="address">адрес доставки:</label>
+            <input id="address" type="text" />
+          </div>
+          <div id="payment">
+            <span>Оплата</span>
+            <label>
+              <input type="radio" name="payment-type" value="1" />
+              <span class="custom-radio"></span>
+              картой на сайте
+            </label>
+            <label>
+              <input type="radio" name="payment-type" value="2" />
+              <span class="custom-radio"></span>
+              картой при получении
+            </label>
+            <label>
+              <input type="radio" name="payment-type" value="3" />
+              <span class="custom-radio"></span>
+              наличными
+            </label>
+          </div>
+        </div>
+        <div class="final-order">
+          <h2>СОСТАВ ЗАКАЗА</h2>
+          <div id="inf-order-summary">
+            <div class="item-order">
+              <div class="pizza-name">
+                <span>ПЕППЕРОНИ</span>
+                <span>30P</span>
+              </div>
+              <span>30cм, традиционное тесто 30, 640г</span>
+            </div>
+            <div class="item-order">
+              <div class="pizza-name">
+                <span>МАРГАРИТА</span>
+                <span>35P</span>
+              </div>
+              <span>30см, традиционное тесто 30, 640г</span>
+            </div>
+            <span class="line"></span>
+            <div class="total">
+              <span>СУММА ЗАКАЗА</span>
+              <span>65P</span>
+            </div>
+          </div>
+        </div>
+    </div>
+        <input class="submit-button" type="submit" value="Оформить заказ">
+      </section>
+    </main>
+    <footer>
+      <div class="frame-footer">
+        <img id="frame-in-footer" src="../img/frame-footer.png" />
+        <img id="logo-footer" src="../img/logo.png" />
+        <img id="circle1" src="../img/circle1.svg" />
+        <img id="circle2" src="../img/circle2.svg" />
+        <img id="circle3" src="../img/circle3.svg" />
+        <img id="circle4" src="../img/circle4.svg" />
+      </div>
+      <div class="bottom-line">
+        <ul>
+          <li>PRIVACY</li>
+          <li>FUOCO</li>
+          <li>
+            <a href="https://www.instagram.com/mariia.tii/">INSTRAGRAM</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <img id="flame" src="../img/flame.png" />
+</html>
