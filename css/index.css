@@ -439,7 +439,7 @@ footer{
 #flame{
     width: 100%;
     position: absolute;
-    bottom: -1%;
+    bottom: 0%;
     left:0%;
     z-index: 1;
     background-color: transparent;
