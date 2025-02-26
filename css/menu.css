@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-size: 0.9vw; /*17,28px*/
+}
+
+body {  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    background: #FFFCF6;
+    height: auto;
+    margin-left: 1.38rem;
+    margin-right: 1.38rem;
+    border-bottom: 0.0625rem solid #0E0A00;
+    border-left: 0.0625rem solid #0E0A00;
+    border-right: 0.0625rem solid #0E0A00;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    align-items: center; 
+    padding: 1.85rem 0rem 1.68rem 0rem; 
+    border-bottom: 0.0625rem solid #0E0A00;
+    text-transform: uppercase;
+    letter-spacing: 0.029rem;
+}
+
+.logo-nav {
+    margin-right: 6.95rem; 
+    margin-left: 2.2rem;
+    width: 2.43rem;
+    height: 2.48rem;
+}
+
+nav ul {
+    display: flex; 
+    list-style: none;
+    margin: 0; 
+}
+
+
+nav li {
+    margin-right: 2.77rem; 
+}
+
+nav li:last-child {
+    margin-right: 0; 
+}
+
+nav ul a {
+    padding: 10px;
+    color: #222;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+nav ul a:hover {
+    border: 1px solid #222;
+    border-radius: 50%; 
+}
+
+nav>a {
+    display: flex; 
+    align-items: center;
+    justify-content: center;  
+    height: 2.78rem;
+    width: 6.95rem;;   
+    margin-right: 4.16rem;
+    background-color: #EB6B32;
+    color: #FFFDFA;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav>a:hover {
+    background-color: #e64a19; 
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #FFFCF6;
+}
+
+.column-content {
+    display: flex;
+    width: 100%;
+    align-items: center; 
+    
+}
+
+.column {
+    width: 50%;
+    
+}
+
+.column-left {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:  1.428rem; 
+}
+
+/* Текст */
+.text1 {
+    color: #222;
+    text-align: center;
+    font-size: 3.375rem;
+    white-space: pre-line;
+    font-family: Roboto, sans-serif;
+    margin: 0; 
+}
+.column-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:  1.428rem; 
+}
+
+.image-container {
+    border-left: 0.0625rem  solid #0E0A00;  
+    
+}
+.img1{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+.moving-text-container {
+    display: flex;
+    padding: 0.64rem 0;
+    text-transform: uppercase;
+    border-bottom: 0.0625rem solid #0E0A00; 
+    border-top: 0.0625rem solid #0E0A00;  
+    overflow: hidden; 
+}
+.moving-content {
+    display: flex; 
+    align-items: center;
+    animation: move 5s linear infinite; 
+    white-space: nowrap; 
+}
+
+.moving-logo {
+    width: 1.714rem;
+    margin-left: 4.28rem;
+    margin-right: 4.28rem;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+
+.textic{
+    word-spacing: 3rem;
+    font-size:1.5rem;
+    white-space: pre-line;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    margin-top: -1.03rem ;
+    margin-left:1.25rem; 
+}
+
+.blocks-container {
+    display: flex; /* Располагаем блоки в ряд */
+    gap: 1.25rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem; 
+    margin-bottom: 1.25rem;
+  }
+
+.block{
+    border: 0.0625rem solid #0E0A00; 
+    width: 100%;
+    height: auto;
+    
+}
+
+.textmain{
+    margin-top: 2.97rem;
+}
+.textpost{
+    margin-top: 0.5rem;
+    color: #222;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    margin-left:1.25rem; 
+    letter-spacing: 0.03125rem;
+    text-transform: uppercase;
+}
+.textprice{
+    margin-top: 3.12rem;
+    margin-left:1.25rem; 
+}
+.imageblock{
+    display: flex;
+    margin-top: 0rem; /* Отступ сверху */
+    justify-content: center;
+   
+}
+.imgpizza{
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+.price-and-button-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;  /* Используем flexbox для выравнивания элементов */
+  align-items: center; 
+  justify-content: space-between;/* Выравниваем по вертикали */
+  gap: 10px; 
+   
+  }
+  
+  .textprice {
+    margin-top: 3.12rem;
+    margin-left:1.25rem;
+    
+  }
+  
+  .buttonblock {
+    width: 7.5rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    border: 0.0625rem solid #0E0A00;
+    background: none;
+    display: flex; /* Нужно, чтобы кнопка тоже была флекс-элементом */
+  }
+  
+  .buttontext {
+    color: #222;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+
+
+
