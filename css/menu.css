@@ -17,6 +17,7 @@ body {
     height: auto;
     margin-left: 1.38rem;
     margin-right: 1.38rem;
+    border-top: 0.0625rem solid #0E0A00;
     border-bottom: 0.0625rem solid #0E0A00;
     border-left: 0.0625rem solid #0E0A00;
     border-right: 0.0625rem solid #0E0A00;
