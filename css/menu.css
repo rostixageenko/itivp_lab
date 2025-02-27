@@ -219,17 +219,16 @@ header {
     display: block; 
 }
 .price-and-button-container {
-    display: grid;
-    grid-template-columns: auto 1fr auto;  /* Используем flexbox для выравнивания элементов */
+    display: inline-flex;
   align-items: center; 
-  justify-content: space-between;/* Выравниваем по вертикали */
-  gap: 10px; 
+  
    
   }
   
   .textprice {
-    margin-top: 3.12rem;
     margin-left:1.25rem;
+    margin-right:19rem;
+    word-spacing: -0.02rem; 
     
   }
   
@@ -252,6 +251,14 @@ header {
     text-transform: uppercase;
   }
   
+  .buttonblock:hover {
+    background-color: #EB6B32; /* Заливка при наведении */
+    border-color: #EB6B32; /* Меняем цвет рамки, чтобы соответствовал фону */
+}
+
+.buttonblock:hover .buttontext {
+    color: #FFFCF6; /* Цвет текста при наведении */
+}
 
 
 
