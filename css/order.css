@@ -429,7 +429,7 @@ input[type="radio"]:checked + .custom-radio::after {
     }
     
     .final-order {
-        padding: 6rem ;
+        padding: 7rem ;
     }
     
     .final-order h2 {
@@ -460,5 +460,8 @@ input[type="radio"]:checked + .custom-radio::after {
         font-size: 4rem ;
         letter-spacing: 0.03125rem;
         padding: 1.8rem 4rem;
+    }
+    footer{
+        margin-top: 19em;
     }
 }
