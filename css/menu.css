@@ -1309,9 +1309,8 @@ footer{
         font-family: Roboto;
         font-style: normal;
         font-weight: 400;
-        margin: 0;
-        margin-left: 1.7857rem;
-        margin-right: 1.7857rem;
+        padding-top: 10rem; 
+        width: 122.2%;
         border-bottom: 1px solid #0E0A00;
         border-left: 1px solid #0E0A00;
         border-right: 1px solid #0E0A00;
@@ -1409,12 +1408,13 @@ footer{
         display: grid;
         grid-template-columns: auto auto ; 
         align-items: center; 
-        padding: 6rem 0rem 5rem 0rem; 
         border-top: 1px solid #0E0A00; 
         border-bottom: 1px solid #0E0A00; 
         text-transform: uppercase;
         letter-spacing: 0.0357rem;
-        font-size: 4rem;
+        padding: 2.5rem 0rem 2.07rem 0rem;
+        font-size: 2.5rem;
+        width: 97.7%;
     }
     .nav-links {
         display: none;
@@ -1504,51 +1504,44 @@ footer{
         background-color: #FFFCF6;
     }
     
+
     .column-content {
-        display: flex;
-        width: 100%;
-        align-items: center; 
         
+        width: 100%;        
     }
     
-    .column {
-        width: 50%;
+    /* .column {
+        width: 100%;
         
-    }
+    } */
     
     .column-left {
     
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding:  1.428rem; 
+        width: 100%;
+        
     }
     
     /* Текст */
     .text1 {
         color: #222;
         text-align: center;
-        font-size: 3.375rem;
+        font-size: 5rem;
         white-space: pre-line;
         font-family: Roboto, sans-serif;
-        margin: 0; 
-    }
-    .column-right {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding:  1.428rem; 
+        padding: 5rem;
     }
     
     .image-container {
-        border-left: 0.0625rem  solid #0E0A00;  
+        border-top: 0.0625rem  solid #0E0A00;  
+        padding: 3rem;
         
     }
-    .img1{
+    .image-container img{
         width: 100%;
         height: auto;
-        display: block; 
+        
     }
+    
     .moving-text-container {
         display: flex;
         padding: 0.64rem 0;
