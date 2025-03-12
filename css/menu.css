@@ -8,6 +8,9 @@
 *{
 background-color: #FFFCF6;
 }
+#cock-container {
+    border-bottom: 1px;
+}
 .invisible-link{
     color: transparent;
     text-decoration: none;
@@ -88,7 +91,6 @@ nav ul a {
 
 nav ul a:hover {
     border: 1px solid #222;
-    border-radius: 50%; 
 
 }
 
@@ -118,7 +120,7 @@ header {
 .column-content {
     display: flex;
     width: 100%;
-    align-items: center; 
+    
     
 }
 
@@ -1011,24 +1013,18 @@ footer{
     
     .column-content {
         
-        width: 100%;
-        align-items: center; 
-        
+        width: 100%;        
     }
     
-    .column {
+    /* .column {
         width: 100%;
         
-    }
+    } */
     
     .column-left {
     
         width: 100%;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5rem; 
+        
     }
     
     /* Текст */
@@ -1038,27 +1034,17 @@ footer{
         font-size: 5rem;
         white-space: pre-line;
         font-family: Roboto, sans-serif;
-        margin: 0; 
-    }
-    .column-right {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding:  2rem; 
-        width: 100%;
-        height: auto;
+        padding: 5rem;
     }
     
     .image-container {
         border-top: 0.0625rem  solid #0E0A00;  
+        padding: 3rem;
         
     }
-    .img1{
-        width: 96%;
+    .image-container img{
+        width: 100%;
         height: auto;
-        justify-content: center;
-        display: flex;
-        margin-right:1.25rem;
         
     }
     .moving-text-container {
