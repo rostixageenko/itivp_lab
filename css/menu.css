@@ -151,7 +151,6 @@ header {
     }
 }
 
-
 .textic{
     word-spacing: 3rem;
     font-size:1.5rem;
@@ -160,6 +159,26 @@ header {
     text-transform: uppercase;
     /* margin-top: -1rem ; */
     margin-left:1.25rem; 
+}
+
+#search{
+    padding: 2rem 1.25rem 2rem 1.25rem;
+}
+
+#search-field{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+
+#search-field button {
+    justify-self: end;
+}
+
+#search-input{
+    color: #222;
+    font-family: Roboto;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 .blocks-container {
@@ -550,15 +569,19 @@ footer{
         }
     }
     
-    
     .textic{
         word-spacing: 3rem;
-        font-size:2rem;
+        font-size:1.5rem;
         white-space: pre-line;
         font-family: Roboto, sans-serif;
         text-transform: uppercase;
         /* margin-top: -1rem ; */
         margin-left:1.25rem; 
+    }
+
+    #search-field{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     
     .blocks-container {
