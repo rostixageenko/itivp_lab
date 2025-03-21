@@ -30,7 +30,7 @@ body {
     border-right: 1px solid #0E0A00;
 }
 
-.menu_toggle, #menu_toggle , .logo-nav1, .order-burger{
+.burger , .logo-nav1, .order-burger{
     display: none; 
 }
 
@@ -58,24 +58,32 @@ nav {
     height: 3.07rem;
 }
 
-nav ul  {
+#menu  {
     display: flex; 
     list-style: none;
     margin: 0; 
+    align-items: center;
 }
 
+#visit-link {
+    padding: 10px;
+    color: #222;
+    text-decoration: none; 
+    border: 1px solid black;
+    border-radius: 50%; 
+}
 
-nav li {
+#menu .menu-item {
     margin-right: 3.43rem; 
 }
 
-nav li:last-child {
+#menu .menu-item:last-child {
     margin-right: 0; 
 }
 
 
 
-nav ul a {
+nav #menu a {
     padding: 10px;
     color: #222;
     text-decoration: none;
@@ -83,7 +91,7 @@ nav ul a {
     border-radius: 50%; 
 }
 
-nav ul a:hover {
+nav #menu a:hover {
     border: 1px solid #222;
 }
 
@@ -103,6 +111,7 @@ nav>a {
 nav>a:hover {
     background-color: #e64a19; 
 }
+
 
 /* =========================================================================================== */
 
@@ -465,7 +474,7 @@ footer{
         border-right: 1px solid #0E0A00;
     }
     
-    .menu_toggle, #menu_toggle , .logo-nav1, .order-burger{
+    .burger , .logo-nav1, .order-burger{
         display: none; 
     }
     
@@ -493,22 +502,30 @@ footer{
         height: 3.07rem;
     }
     
-    nav ul  {
+    nav #menu  {
         display: flex; 
         list-style: none;
         margin: 0; 
+        align-items: center;
+    }
+
+    #visit-link {
+        padding: 10px;
+        color: #222;
+        text-decoration: none; 
+        border: 1px solid black;
+        border-radius: 50%; 
     }
     
-    
-    nav li {
+    #menu .menu-item {
         margin-right: 3.43rem; 
     }
     
-    nav li:last-child {
+    #menu .menu-item:last-child {
         margin-right: 0; 
     }
     
-    nav ul a {
+    nav #menu a {
         padding: 10px;
         color: #222;
         text-decoration: none;
@@ -516,7 +533,7 @@ footer{
         border-radius: 50%; 
     }
     
-    nav ul a:hover {
+    nav #menu a:hover {
         border: 1px solid #222;
     }
     
@@ -906,89 +923,6 @@ footer{
         border-right: 1px solid #0E0A00;
     }
 
-    .hamburger-menu {
-        display: flex;
-        width: 80px;
-        /* justify-content: flex-end; */
-        align-items: center;
-        margin-left: auto; 
-    }
-
-    #menu_toggle {
-        display: flex;
-        justify-items: right;
-        opacity: 0;
-    }
-
-    .menu_btn {
-        display: flex;
-        align-items: center;
-        width: 26px;
-        height: 26px;
-        cursor: pointer;
-    }
-
-    .menu_btn > span,
-    .menu_btn > span::before,
-    .menu_btn > span::after {
-        display: block;
-        position: absolute;
-        width: 40px;
-        height: 2px;
-        background-color: black;
-    }
-
-    .menu_btn > span::before {
-        content: '';
-        top: -9px;
-    } 
-
-    .menu_btn > span::after {
-        content: '';
-        top: 9px;
-    }
-
-    .menu_box {
-        display: block;
-        visibility: hidden;
-        width: 89.5%;
-        margin: 0;
-        background-color: #ECEFF1;
-        border-right: 1px solid black ;
-    }
-
-    .menu_item{
-        display: block;
-        padding: 12px 24px;
-        color: #333;
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
-    }
-
-    .menu_item:hover{
-        background-color: #CFD8DC;
-    }
-
-    #menu_toggle:checked ~ .menu_btn > span {
-        transform: rotate(45deg);
-    }
-
-    #menu_toggle:checked ~ .menu_btn > span::before {
-        top:0;
-        transform: rotate(0);
-    }
-
-    #menu_toggle:checked ~ .menu_btn > span::after {
-        top:0;
-        transform: rotate(90deg);
-    }
-
-    #menu_toggle:checked ~ .menu_box {
-        visibility: visible;
-        left: 0;
-    }
-
     nav {
         position: fixed; 
         top: 0; 
@@ -1005,48 +939,57 @@ footer{
         letter-spacing: 0.0357rem;
         font-size: 4rem;
     }
-    .nav-links {
-        display: none;
-    }
 
     .burger {
-        display: flex; 
-        cursor: pointer;
-        flex-direction: column; 
-        width: 8rem;
-        margin-left: auto;
+        width: 8.5rem;
+        height: 5.9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: auto; 
         margin-right: 5rem;
     }
-
-    .burger div {
-        display: flex;
-        width: 30px; 
-        height: 3px; 
-        background: #222; 
-        margin: 4px 0; 
+    .line {
+        height: 3px;
+        background-color: black;
+        transition: all 0.3s;
     }
 
-    nav ul {
-        display: none; 
-        flex-direction: column; 
+    #menu {
+        display: none;
         position: absolute;
         top: 101%;
         margin:0;
         left: 0; 
-        right: 0; 
+        right: 0;
         background-color: #f1ede7;
         z-index: 999; 
         border-bottom: 1px solid black;
-        border-left: 1px solid black;
     }
 
-    nav ul.active {
-        display: flex;
-    }
-
-    nav li {
-        margin: 4rem 0;
+    .menu-item, .order-burger {
+        display: block;
+    }    
+       
+    nav .menu-item, nav .order-burger {
+        margin: 4rem 0 4rem 3rem;
         background-color: transparent;
+    } 
+
+    nav #menu a, #visit-link span  {
+        font-size:4.5rem;
+        padding: 1rem;
+        color: #222;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    #visit-link {
+        text-decoration: underline; 
+    }
+
+    nav #menu a:hover {
+        text-decoration: underline;
     }
 
     .logo-nav1 {
@@ -1056,35 +999,6 @@ footer{
     }
     .logo-nav2 {
         width: 7rem;
-    }
-
-
-
-    nav ul a {
-        padding: 1rem;
-        color: #222;
-        text-decoration: none;
-        background-color: transparent;
-    }
-
-    nav ul a:hover {
-        text-decoration: underline;
-    }
-
-    nav>a {
-        display: flex; 
-        align-items: center;
-        justify-content: center;  
-        height: 3.43rem;
-        width: 8.57rem;;   
-        margin-right: 5.14rem;
-        background-color: #EB6B32;
-        color: #FFFDFA;
-        text-decoration: none;
-        text-align: center;}
-
-    nav>a:hover {
-        background-color: #e64a19; 
     }
 
     /* =========================================================================================== */
@@ -1453,34 +1367,15 @@ footer{
         font-size: 2.5rem;
         width: 97.7%;
     }
-    .hamburger-menu {
-        margin-right: 4%;
-    }
-
-    .menu_btn > span,
-    .menu_btn > span::before,
-    .menu_btn > span::after {
-        display: block;
-        position: absolute;
+    
+    .burger {
         width: 6rem;
-        height: 2px;
-        background-color: #616161;
+        height: 3.5rem;
     }
 
-    .menu_box {
-        width:40rem;
-        left: auto; 
-    }
-
-    #menu_toggle:checked ~ .menu_box {
-        visibility: visible;
-        left: auto;
-        font-size: 3rem;
-    }
-        
-    nav li {
-        margin: 2rem 0;
-        background-color: transparent;
+    nav #menu a ,
+    #visit-link span {
+        font-size:3rem;
     }
     
     .logo-nav1 {

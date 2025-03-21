@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FUOCO - Настоящая неополитанская пицца</title>
     <link rel="stylesheet" href="./css/index.css" />
+
+
+
   </head>
 
   <body>
@@ -13,7 +16,7 @@
         <img class="logo-nav1" src="./img/logo.png" >
         <img class="logo-nav2" src="./icons/logo-nav.svg" alt="Logonav" />
       </div>
-      <div class="hamburger-menu">
+      <!-- <div class="hamburger-menu">
         <input id="menu_toggle" type="checkbox">
         <label class="menu_btn" for="menu_toggle">
           <span></span>
@@ -24,7 +27,21 @@
           <li><a class="menu-item" href="./html/special_offers.html">Спецпредложения</a></li>
           <li class="order-burger"><a class="menu-item" href="./html/contact.html">Заказать</a></li>
         </ul>
-      </div>
+      </div> -->
+
+      <div class="burger" id="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div id="menu">
+        <div class="menu-item"><a href="./html/menu.html">Меню</a></div>
+        <div class="menu-item"><a href="./html/contact.html">Контакты</a></div>
+        <div class="menu-item"><a href="./html/special_offers.html">Спецпредложения</a></div>
+        <div class="order-burger"><a href="./html/contact.html">Заказать</a></div>
+    </div>
+
       <a class="desctop-order" href="./html/order.html">Заказать</a>
     </nav>
 
@@ -215,6 +232,8 @@
         </ul>
       </div>
     </footer>
+    
+    <script src="./js/open_burger.js"></script>
   </body>
   <img id="flame" src="./img/flame.png" />
 </html>
