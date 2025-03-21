@@ -13,18 +13,4 @@ seacrhButton.addEventListener('click', ()=>{
             block.style.display= 'none';
         }
     });
-
-    // searchInput.addEventListener('input', () => {
-    //     const filter = searchInput.value.toLowerCase();
-    //     const menuItems = menu.getElementsByClassName('menu-item');
-
-    //     for (let i = 0; i < menuItems.length; i++) {
-    //         const item = menuItems[i];
-    //         if (item.textContent.toLowerCase().includes(filter)) {
-    //             item.style.display = '';
-    //         } else {
-    //             item.style.display = 'none';
-    //         }
-    //     }
-    // });
 })
