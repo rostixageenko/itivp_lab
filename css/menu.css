@@ -951,6 +951,7 @@ footer{
         
     #search-input{
         font-size: 4rem;
+        border: 0.5px solid black;
     }
     
     .textic{
