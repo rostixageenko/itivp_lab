@@ -992,6 +992,23 @@ footer{
         text-decoration: underline;
     }
 
+    
+    .burger.open .line {
+        height: 3px; 
+    }
+
+    .burger.open .line:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 8.5px);
+    }
+
+    .burger.open .line:nth-child(2) {
+        opacity: 0; 
+        height: 0;
+    }
+
+    .burger.open .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -10px);
+    }
     .logo-nav1 {
         margin-left: 5rem;
         margin-right: 3rem; 
@@ -1371,6 +1388,14 @@ footer{
     .burger {
         width: 6rem;
         height: 3.5rem;
+    }
+
+    .burger.open .line:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 13.3px);
+    }
+
+    .burger.open .line:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -13.3px);
     }
 
     nav #menu a ,

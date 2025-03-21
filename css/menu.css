@@ -16,6 +16,26 @@ background-color: #FFFCF6;
     text-decoration: none;
 }
 
+#search{
+    padding: 2rem 1.25rem 2rem 1.25rem;
+}
+
+#search-field{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+
+#search-field button {
+    justify-self: end;
+}
+
+#search-input{
+    color: #222;
+    font-family: Roboto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
 
 @media (min-width: 1200px){
     
@@ -150,7 +170,6 @@ header {
         transform: translateX(-100%); 
     }
 }
-
 
 .textic{
     word-spacing: 3rem;
@@ -549,16 +568,20 @@ footer{
             transform: translateX(-100%); 
         }
     }
-    
-    
+
     .textic{
         word-spacing: 3rem;
-        font-size:2rem;
+        font-size:1.5rem;
         white-space: pre-line;
         font-family: Roboto, sans-serif;
         text-transform: uppercase;
         /* margin-top: -1rem ; */
         margin-left:1.25rem; 
+    }
+
+    #search-field{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     
     .blocks-container {
@@ -918,6 +941,17 @@ footer{
         }
     }
     
+    #search{
+        padding: 4rem 3rem 4rem 3rem;
+    }
+    
+    #search-field{
+        grid-template-columns: 2fr 1fr;
+    }
+        
+    #search-input{
+        font-size: 4rem;
+    }
     
     .textic{
         word-spacing: 3rem;
@@ -1155,90 +1189,7 @@ footer{
         border-left: 1px solid #0E0A00;
         border-right: 1px solid #0E0A00;
     }
-
-    .hamburger-menu {
-        display: flex;
-        width: 80px;
-        /* justify-content: flex-end; */
-        align-items: center;
-        margin-left: auto; 
-    }
-
-    #menu_toggle {
-        display: flex;
-        justify-items: right;
-        opacity: 0;
-    }
-
-    .menu_btn {
-        display: flex;
-        align-items: center;
-        width: 26px;
-        height: 26px;
-        cursor: pointer;
-    }
-
-    .menu_btn > span,
-    .menu_btn > span::before,
-    .menu_btn > span::after {
-        display: block;
-        position: absolute;
-        width: 40px;
-        height: 2px;
-        background-color: black;
-    }
-
-    .menu_btn > span::before {
-        content: '';
-        top: -9px;
-    } 
-
-    .menu_btn > span::after {
-        content: '';
-        top: 9px;
-    }
-
-    .menu_box {
-        display: block;
-        visibility: hidden;
-        width: 89.5%;
-        margin: 0;
-        background-color: #ECEFF1;
-        border-right: 1px solid black ;
-    }
-
-    .menu_item{
-        display: block;
-        padding: 12px 24px;
-        color: #333;
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
-    }
-
-    .menu_item:hover{
-        background-color: #CFD8DC;
-    }
-
-    #menu_toggle:checked ~ .menu_btn > span {
-        transform: rotate(45deg);
-    }
-
-    #menu_toggle:checked ~ .menu_btn > span::before {
-        top:0;
-        transform: rotate(0);
-    }
-
-    #menu_toggle:checked ~ .menu_btn > span::after {
-        top:0;
-        transform: rotate(90deg);
-    }
-
-    #menu_toggle:checked ~ .menu_box {
-        visibility: visible;
-        left: 0;
-    }
-
+    
     nav {
         position: fixed; 
         top: 0; 
