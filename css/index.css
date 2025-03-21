@@ -992,23 +992,23 @@ footer{
         text-decoration: underline;
     }
 
-    /* Стили для состояния открытого бургер-меню */
-.burger.open .line {
-    height: 3px; /* Высота линий при открытом состоянии */
-}
+    
+    .burger.open .line {
+        height: 3px; 
+    }
 
-.burger.open .line:nth-child(1) {
-    transform: rotate(45deg) translate(4px, 8.5px);
-}
+    .burger.open .line:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 8.5px);
+    }
 
-.burger.open .line:nth-child(2) {
-    opacity: 0; /* Скрываем среднюю линию */
-    height: 0; /* Уменьшаем высоту средней линии до 0 */
-}
+    .burger.open .line:nth-child(2) {
+        opacity: 0; 
+        height: 0;
+    }
 
-.burger.open .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -10px);
-}
+    .burger.open .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -10px);
+    }
     .logo-nav1 {
         margin-left: 5rem;
         margin-right: 3rem; 
@@ -1388,6 +1388,14 @@ footer{
     .burger {
         width: 6rem;
         height: 3.5rem;
+    }
+
+    .burger.open .line:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 13.3px);
+    }
+
+    .burger.open .line:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -13.3px);
     }
 
     nav #menu a ,
