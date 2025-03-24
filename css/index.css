@@ -9,7 +9,6 @@
 background-color: #FFFCF6;
 }
 
-
 @media (min-width: 1440px) {
     
 html{
@@ -1375,14 +1374,16 @@ footer{
 }
 
 @media only screen and (max-width: 1000px)  and (orientation: landscape){
+
+
     body {  
         padding-top: 10rem; 
-        width: 122.2%;
+        width: 96%;
     }
     nav {
         padding: 2.5rem 0rem 2.07rem 0rem;
         font-size: 2.5rem;
-        width: 97.7%;
+        width: 96%;
     }
     
     .burger {
@@ -1395,7 +1396,7 @@ footer{
     }
 
     .burger.open .line:nth-child(3) {
-        transform: rotate(-45deg) translate(4px, -13.3px);
+        transform: rotate(-45deg) translate(5px, -16px);
     }
 
     nav #menu a ,
@@ -1444,8 +1445,7 @@ footer{
     }
     
     .logo-image {
-
-        padding: 3.43rem 2em;    
+        padding: 3.43rem 1.8rem;    
     }
     
     .moving-text-container {
@@ -1540,6 +1540,6 @@ footer{
     }
         
     #flame{
-        width: 125%;
+        width: 100%;
     }
 }
