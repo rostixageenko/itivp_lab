@@ -38,6 +38,7 @@ background-color: #FFFCF6;
     border: 1px solid black;
     border-radius: 0; 
     padding: 0.5rem;
+    cursor: pointer;
 }
 
 .clear-icon {
@@ -55,6 +56,14 @@ background-color: #FFFCF6;
 #search-input:focus + .clear-icon,
 #search-input:not(:placeholder-shown) + .clear-icon {
     display: block; 
+}
+
+#search-input:focus {
+    color: black;
+    border-color:#EB6B32;
+    border-radius: 0; 
+    cursor: pointer;
+    outline: none; 
 }
 
 @media (min-width: 1200px){
