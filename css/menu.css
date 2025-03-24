@@ -915,8 +915,6 @@ footer{
         border: 0.0625rem solid #0E0A00; 
         flex: 0 1 calc(100% - 1.25rem);
         width: 100%;
-        height: auto;
-        
     }
     
     .textmain{
