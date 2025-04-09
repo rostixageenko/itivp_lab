@@ -4,16 +4,10 @@ const blocks = Array.from(document.querySelectorAll('.block'));
 const clearButton = document.getElementById('clear-button');
 
 searchButton.addEventListener('click', () => {
-    const inputValue = searchInput.value; 
-    const trimmedValue = inputValue.trim(); 
+    const trimmedValue =  searchInput.value.trim(); 
 
     const spacePattern = /^(?! )[^\s]*(\s[^\s]+)*$/; 
     const maxLength = 30;
-
-    if (inputValue.startsWith(' ') ) {
-        alert('Ошибка: Не начинайте с пробела '); 
-        return;
-    }
 
     if ( !spacePattern.test(trimmedValue) ) {
         alert('Ошибка: Вводите не более 1 пробела между словами'); 
