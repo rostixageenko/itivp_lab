@@ -108,7 +108,9 @@ const paymentBlock = document.getElementById("payment");
       
         return true;
       }
-      
+      nameInput.addEventListener("input", () => {
+        validateName();
+      });
 
       nameInput.addEventListener("keydown", function (e) {
         const key = e.key;
@@ -149,6 +151,9 @@ const paymentBlock = document.getElementById("payment");
         validateNumber();
       });
       
+      addressInput.addEventListener("input", () => {
+        validateAddress();
+      });
       
       addressInput.addEventListener("keydown", function (e) {
         const key = e.key;
